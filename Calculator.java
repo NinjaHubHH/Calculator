@@ -3,23 +3,19 @@ import java.util.*;
 public class Calculator {
 	public static void main(String []args){
 		Scanner scanner = new Scanner(System.in);
-<<<<<<< HEAD
 		System.out.print("Bitte eingeben [+-*/] zahl1 zahl2: ");
-		int zahl1 = scanner.nextInt();
-		int zahl2 = scanner.nextInt();
-		int result = 0;
-=======
-		System.out.println("Bitte eingeben [+-*/] zahl 1 zahl2");
 		String operator = scanner.next();
 		int zahl1 = scanner.nextInt();
 		int zahl2 = scanner.nextInt();
 		int result = 0;
-		
+
 		if(operator.equals("+")){
 				result = zahl1 + zahl2;
 		}
+		else if (operator.equals("-")){
+			result = zahl1-zahl2;
+		}
 		System.out.println(zahl1 + " " + operator + " " + zahl2 + " = " + result);
 		
->>>>>>> addition
 	}
 }
